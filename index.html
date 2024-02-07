@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width, initial-scale=1.0" />
+  <title>Travel around the world</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="header" id="home">
+    <div class="coverImg">
+      <img src="./EUcountries/eu_cover4.png" alt="" />
+
+      <div class="headerText">
+        <span>EU Countries by SDK<i class="fa-brands fa-servicestack"></i></span>
+
+        <ul class="navbar">
+          <li><a href="#home" class="home-list">Home</a></li>
+          <li>
+            <a href="#" class="list">
+              <select name="tourlist" id="tourlist" onchange="location = this.value;">
+                <optgroup label="EU Countries"></optgroup>
+                <option value="#tour">Tours</option>
+                <option value="#austria">Austria</option>
+                <option value="#belgium">Belgium</option>
+                <option value="#italy">Italy</option>
+                <option value="#france">France</option>
+                <option value="#denmark">Denmark</option>
+                <option value="#spain">Spain</option>
+                <option value="#sweden">Sweden</option>
+                <option value="#netherlands">Netherlands</option>
+                <option value="#ireland">Ireland</option>
+              </select></a>
+          </li>
+    
+          <li><a href="#blog" class="list">Blog</a></li>
+          <li><a href="#gallery" class="list"> Gallery</a></li>
+          <li><a href="#about" class="list">About</a></li>
+          <li><a href="#contact" class="list">Contact</a></li>
+        </ul>
+      </div>
+   
+
+      <div class="content" id="">
+        <h1 >
+          Let's
+          go
+          around
+          the
+          Europe 
+        </h1>
+    <p>
+          Travel to the any corner of the world, without going around in
+          circles.
+        </p>
+      </div>
+
+      <div class="searchBar">
+        <form action="" class="searchBarForm">
+          <input type="text" list="countrieslist" class="text" placeholder="Enter keyword . ." />
+          <input type="submit" value="Search" class="submit" />
+        </form>
+
+        <datalist id="countrieslist">
+          <option value="Austria"></option>
+          <option value="Belgium"></option>
+          <option value="Bulgaria"></option>
+          <option value="Croatia"></option>
+        </datalist>
+      </div>
+    </div>
+  </div>
+
+  <a href="#top" class="scroll_up">
+    <div class="scroll_up_btn">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+  </a>
+   
+
+  <div class="aboutCountries_ac" id="blog">
+
+    <div class="ac_text">
+      <h1>Best Offers <i class="fa-sharp fa-solid fa-plane-departure"></i></h1>
+      <span class="dark_color">Check out our top-rated country</span>
+    </div>
+
+    <div class="ac_img_boxes animate__animated animate__fadeInRight animate__slower">
+
+      <div class="ac_img_box">
+        <a href="#italy" id="italy">
+          <div class="ac_img">
+            <img src="./EUcountries/italy.jpg" alt="" />
+          </div>
+          <h3>Italy</h3>
+        </a>
+
+          <details>
+            <summary>Italian food is delicious, authentic and healthy</summary>
+            Italy is a country famous not only for its glorious landscapes,
+            rich history and vibrant culture, but also for the Italian divine
+            food that is a perfect fit for everyone. Italian food is one of
+            the many reasons.
+          </details>
+      </div>
+
+
+
+      <div class="ac_img_box">
+        <a href="#spain" id="spain">
+          <div class="ac_img">
+            <img src="./EUcountries/spain1.jpg" alt="" />
+          </div>
+          <h3>Spain</h3>
+
+          <details>
+            <summary>Spain is totally blessed with magnificent beaches</summary>
+            From undiscovered, hidden alcoves to popular tourist resorts,
+            there's a beach for everyone and with over 300 days of sunshine each year. The weather to
+            enjoy them!
+          </details>
+        </a>
+      </div>
+
+      <div class="ac_img_box">
+        <a href="#austria" id="austria">
+
+          <div class="ac_img">
+            <img src="./EUcountries/austria.jpg" alt="" />
+          </div>
+
+          <h3>Austria</h3>
+
+          <details>
+            <summary>Austria has breathtaking views</summary>
+            Austria is home to some of the most magnificent and breathtaking views in the world.
+            In the southern and central regions, Austrian villages are surrounded by the Central Alps.
+          </details>
+        </a>
+      </div>
+
+      <div class="ac_img_box">
+        <a href="#france" id="france">
+          <div class="ac_img">
+            <img src="./EUcountries/france.jpg" alt="" />
+          </div>
+          <h3>France</h3>
+          <details>
+            <summary>France is Romantic city</summary>
+            France isn't just home to the most romantic city in the world.
+            It's a place of elegance, history, and culture.
+            From grandiose cities to small, quiet villages, France is equally for
+            the partier.
+          </details>
+        </a>
+      </div>
+
+    </div>
+
+   <div class="btn_class">
+    <button class="btn">View More Country</button>
+   </div>
+
+    <div class="line1">
+    </div>
+
+    </div>
+
+    <div class="EU_describe" id="about">
+
+      <div class="about_text">
+        <h1><i class="fa-solid fa-water"></i> Europe is surrounded by water on three sides <i class="fa-solid fa-water"></i></h1>
+      
+      </div>
+      <div class="map">
+
+        
+        <div class="bg_area">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40122335.92014764!2d3.8945312500000018!3d52.13663088360152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ed8886cfadda85%3A0x72ef99e6b3fcf079!2sEurope!5e0!3m2!1smy!2smm!4v1678864662057!5m2!1smy!2smm" style="border: 2px solid rgb(194, 112, 18); border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="gg_box"></iframe>
+         </div>
+
+        <div class="mapbox">
+          <img src="./EUcountries/croatia.jpg" alt="">
+          <figcaption>Croatia</figcaption>
+        </div>
+
+        <div class="mapbox_map">
+          <img src="./EUcountries/map.png" alt="">
+          <figcaption>Map of European Country <i class="fa-solid fa-map"></i></figcaption>
+         </div>
+     
+
+      <div class="mapbox">
+        <img src="./EUcountries/hungary.jpg" alt="">
+        <figcaption>Hungary</figcaption>
+      </div>
+       
+
+      <div class="mapbox">
+        <img src="./EUcountries/finland.jpg" alt="">
+        <figcaption>Finland</figcaption>
+       </div>
+       
+
+      <div class="mapbox">
+       <img src="./EUcountries/republic_of_cyprus.jpg" alt="">
+       <figcaption>Republic of Cyprus</figcaption>
+       </div>
+
+       <div class="mapbox">
+        <img src="./EUcountries/belgium.jpg" alt="">
+        <figcaption>Belgium</figcaption>
+       </div>
+        
+
+        <div class="mapbox">
+         <img src="./EUcountries/slovenia.jpg" alt="">
+         <figcaption>Slovenia</figcaption>
+        </div>
+         
+      </div>
+
+      <div class="about_text">
+        <h3>Home to some of the world's most visited attractions and incredible feats of nature and humanity, Europe is one fascinating continent.
+          From the smallest town in the world to the biggest church on earth, and from a knighted penguin to a country free of mosquitoes,
+          there are hundreds of random and fun facts about Europe.</h3>
+      </div>
+
+  </div>
+
+  <div class="img_gallery" id="gallery">
+
+    <div class="images">
+      <div class="image_box">
+        <a href="https://unsplash.com/s/photos/ireland">  
+          <img src="./EUcountries/ireland.jpg" alt="">
+
+          <div class="small_img_box">
+            <img src="./EUcountries/ireland1.jpg" alt="">
+            <div class="hide">
+              <p> Ireland More Photo</p>
+             </div>
+          </div>
+      </a>
+      </div>
+
+      <div class="image_box">
+        <a href="https://pixabay.com/images/search/greece/">
+          <img src="./EUcountries/greece.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/greece1.jpg" alt="">
+            <div class="hide"><p>Greece More Photo</p></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="image_box">
+        <a href="https://pixabay.com/images/search/poland/">
+          <img src="./EUcountries/poland.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/poland1.jpg" alt="">
+            <div class="hide">
+              <p>
+                Poland More Photo
+            </p>
+            </div>
+          </div>
+        </a>
+       
+      </div>
+
+      <div class="image_box">
+        <a href="https://pixabay.com/images/search/portugal/">
+          <img src="./EUcountries/portugal.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/portugal1.jpg" alt="">
+            <div class="hide">
+              <p> Portugal More Photo</p>
+              </div>
+          </div>
+        </a>
+    
+      </div>
+
+      <div class="image_box">
+
+        <a href="https://pixabay.com/images/search/norway/">
+          <img src="./EUcountries/norway.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/norway1.jpg" alt="">
+            <div class="hide">
+              <p>Norway More Photo</p>
+              </div>
+          </div>
+        </a>
+      
+      </div>
+
+      <div class="image_box">
+        <a href="https://pixabay.com/images/search/croatia/">
+          <img src="./EUcountries/croatia.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/croatia1.jpg" alt="">
+            <div class="hide">
+                <p> Croatia More Photo</p>
+           
+            </div>
+          </div>
+        </a>
+      
+      </div>
+
+      <div class="image_box">
+        <a href="https://pixabay.com/images/search/sweden/">
+          <img src="./EUcountries/sweden.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/sweden1.jpg" alt="">
+            <div class="hide">
+              <p>Sweden More Photo</p> </div>
+          </div>
+        </a>
+     
+      </div>
+
+      <div class="image_box">
+        <a href="https://pixabay.com/images/search/latvia/">
+          <img src="./EUcountries/latvia.jpg" alt="">
+          <div class="small_img_box">
+            <img src="./EUcountries/latvia1.jpg" alt="">
+            <div class="hide">
+              <p>  Latvia More Photo</p>
+            </div>
+          </div>
+        </a>
+      
+      </div>
+
+    </div>
+
+    <div class="btn_class">
+      <input type="submit" value="Load More" class="btn">
+    </div>
+   
+
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="contact_cover_video">
+      <!-- <img src="./EUcountries/ocean_video.mp4" alt=""> -->
+      <video src="./EUcountries/ocean_video.mp4" autoplay loop muted></video>
+    </div>
+<!--   
+    <div class="email">
+      <h2>  Send me if u have amazing photo of EU </h2>
+      <div class="email_box">
+        <input type="file"> 
+        <input type="submit">
+      </div>
+    
+    </div> -->
+
+    <div class="footer">
+
+      <div class="footer_head">
+        <div class="h2_box">
+          <h2>EU Countries <i class="fa-brands fa-servicestack"></i></h2>
+        </div>
+       
+        <div class=" dark_color">
+          <span>I would like to travel EU the most. I hope one day I will and I can learn more about EU.
+            Thanks for your visiting my website.</span>
+        </div>
+      </div>
+     
+  
+      <div class="footer_head">
+        <div class="h2_box">
+          <h2>Contact</h2>
+        </div>
+     
+        <div class=" dark_color">
+          <p><i class="fa-solid fa-location-dot"></i> Mawlamyine,Mon,Myanmar</p>
+          <p><i class="fa-solid fa-phone"></i> 09 980 624 170</p>
+          <p><i class="fa-solid fa-envelope"></i> dars7703@gmail.com</p>
+        </div>
+      </div>
+  
+      <div class="footer_head">
+        <div class="h2_box">
+          <h2>Follow</h2>
+        </div>
+
+        <div class="follow_icon">
+          <a href="https://www.facebook.com/DAR29.dd?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@dardar4421" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://instagram.com/sandar_kyaw2?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://t.me/dardar025" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+         
+        </div>
+      </div>
+
+    </div>
+  
+  </div>
+  
+  <div class="copyright"> 
+    <marquee behavior="" direction=""><p> @copyright2023March17_All rights reserved by Sandar Kyaw & reference links</p></marquee>
+   </div>
+</body>
+
+</html>
